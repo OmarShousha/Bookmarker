@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="img/bkmark.png"">
 
     <!--? FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +36,7 @@
                   <i class="fa-solid fa-bookmark fs-4"></i>
                     Bookmark your favorite sites
                   <i class="fa-solid fa-bookmark fs-4"></i>
-                </h2>
-                
+                </h2>                
                 
                 <!--? ═════════▶ Input 1 -->
                 <div class="px-1 w-100">
@@ -45,12 +44,10 @@
                     <i class="fa-solid fa-book-bookmark me-1"></i>
                     Site Name
                   </label>
-                  <input id="siteName" oninput="validationName()" type="text" class="form-control mb-4" placeholder="Bookmark Name">
-
+                  <input id="siteName" oninput="validationName()" type="text" class="form-control mb-1" placeholder="Bookmark Name">
                   <div id="alertName" class="alert anyAlert d-none"> Name must be between 2 and 15 characters.</div>
                 </div>
-                
-                
+                             
                 <!--? ═════════▶ Input 2 -->
                 <div class="px-1 w-100 ">
                   <label for="" class="fw-semibold mb-2">
@@ -59,7 +56,6 @@
                   </label>
                   <input id="siteUrl" type="url" class="form-control mb-1" placeholder="Website URL"
                   oninput="validationUrl()">
-
                   <div id="alertUrl" class="alert anyAlert d-none"> Website URL must begin with "http://".</div>
                 </div>
                 
