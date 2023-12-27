@@ -1,0 +1,72 @@
+
+ 
+/* Medium devices (tablets, 768px and up) md */
+@media (min-width: 768px) { 
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  .w-btn{
+    width: 25%;
+  }
+
+  .btn-visit{
+    --bs-btn-font-size: 16px;
+    --bs-btn-padding-x: 10px;
+    --bs-btn-padding-y: 4px;
+  }
+
+  .btn-update{
+    --bs-btn-font-size: 16px;
+    --bs-btn-padding-x: 10px;
+    --bs-btn-padding-y: 4px;
+  }
+
+  .btn-delete{
+    --bs-btn-font-size: 16px; 
+    --bs-btn-padding-x: 10px;
+    --bs-btn-padding-y: 4px;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) lg */
+@media (min-width: 992px) { 
+
+  h2{
+    font-size: 25px;
+  }
+
+  .content{
+    width: 80%;
+  }
+
+  .w-btn{
+    width: 15%;
+  }
+
+  .searchForm{
+    width: 80%;
+  }
+
+  .table-container{
+    width: 80%;
+  }
+
+  .btn-visit{
+    --bs-btn-font-size: 14px;
+  }
+
+  .btn-update{
+    --bs-btn-font-size: 14px;
+  }
+
+  .btn-delete{
+    --bs-btn-font-size: 14px;
+  }
+
+}
+ 

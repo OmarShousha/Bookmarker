@@ -1,0 +1,190 @@
+/*^ ══════════════════▶ Start Project ◀═══════════════════════  */
+/*^ ══════════════════▶ Start General Styles ◀═══════════════════════  */
+:root{
+  --font-main: 'PT Sans Caption', sans-serif;
+  --font-primary: 'Righteous', sans-serif;
+  --font-secondary: 'Pacifico', cursive;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-main);
+}
+
+main{
+  background-color: #56A176;  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.w-fit{
+  width: fit-content;
+}
+
+.w-btn{
+  width: 35%;
+}
+
+a{
+  text-decoration: none;
+}
+/*^ ══════════════════▶ End General Styles ◀═══════════════════════  */
+
+/*^ ══════════════════▶ Start Main Styles ◀═══════════════════════  */
+
+h1{
+  font-family: var(--font-secondary);
+  color: #FFA264;
+  text-shadow: -1px 0 black, 0 2px black, 4px 0 black, 0 -1px black;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+h1::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #22DAFF;
+  border-radius: 10px;
+  bottom: 8px;
+  left: 0;
+  z-index: -1;
+  transition: height 350ms;
+}
+
+h1:hover::before{
+  height: 80%;
+}
+
+h2{
+  font-family: var(--font-primary);
+  font-size: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, #42825e, #fe9956);
+  text-shadow: 1px black 1px black;
+  -webkit-background-clip: text;   
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
+.searchForm{
+  width: 100%;
+  box-shadow: 0 0px 2px rgba(0,0,0,0.5) ;
+}
+
+.content{
+  width: 100%;
+  border-width: 2px ; 
+  background-color: #D2E8E3;
+  border-radius: 20px;
+  box-shadow: 0 0px 2px rgba(0,0,0,0.5) ;
+  /* border-style: dotted none dotted none; */
+}
+
+label{
+  color: #023535;
+}
+
+.table{
+  --bs-table-color: #023535;
+  box-shadow: 0 0px 2px rgba(0,0,0,0.5) ;
+}
+
+.table th {
+  background-color: #D2E8E3;
+}
+
+.table-container{
+  width: 100%;
+}
+.btn-submit{
+  --bs-btn-padding-x: 0px;
+  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #fd8b3e;
+  --bs-btn-border-color: #ff8f44;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(235, 135, 68);
+  --bs-btn-hover-border-color: rgb(235, 135, 68);
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #000;
+  border-radius: 7px;
+}
+
+.btn-visit{
+  --bs-btn-font-size: 14px;
+  --bs-btn-padding-x: 20px;
+  --bs-btn-padding-y: 0px;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #A1AFBF;
+  --bs-btn-border-color: #A1AFBF;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #828f9e;
+  --bs-btn-hover-border-color: #828f9e;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #000;
+  border-radius: 7px;
+}
+
+.btn-update{
+  --bs-btn-font-size: 14px;
+  --bs-btn-padding-x: 16px;
+  --bs-btn-padding-y: 0px;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #56A176;
+  --bs-btn-border-color: #56A176;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(65, 121, 88);
+  --bs-btn-hover-border-color: rgb(65, 121, 88);
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #000;
+  border-radius: 7px;
+}
+
+.btn-delete{
+  --bs-btn-font-size: 14px;
+  --bs-btn-padding-x: 18px;
+  --bs-btn-padding-y: 0px;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #a03315;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #000;
+  border-radius: 7px;
+}
+
+.anyAlert{
+  --bs-alert-bg: transparent;
+  --bs-alert-padding-x: 6px;
+  --bs-alert-padding-y: 6px;
+  --bs-alert-margin-bottom: 1rem;
+  --bs-alert-color: inherit;
+  --bs-alert-border-color: transparent;
+  --bs-alert-border: var(--bs-border-width) solid var(--bs-alert-border-color);
+  --bs-alert-border-radius: var(--bs-border-radius);
+  --bs-alert-link-color: inherit;
+  --bs-alert-color: var(--bs-primary-text-emphasis);
+  --bs-alert-bg: #ffba8c;
+  --bs-alert-border-color: var(--bs-primary-border-subtle);
+  --bs-alert-link-color: var(--bs-primary-text-emphasis);
+}
+/*^ ══════════════════▶ End Main Styles ◀═══════════════════════  */
+/*^ ══════════════════▶ End Project ◀═══════════════════════  */
+
